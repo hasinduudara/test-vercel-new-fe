@@ -3,7 +3,7 @@ import { refreshTokens } from "./user.ts";
 
 // Axios instance
 const api = axios.create({
-    baseURL: "http://localhost:5000/api/v1",
+    baseURL: import.meta.env.VITE_BACKEND_URL || "http://localhost:5000/api/v1",
     withCredentials: true,
 });
 

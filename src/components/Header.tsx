@@ -37,7 +37,7 @@ export default function Header() {
                     {/* AI Feature Button (Premium Look) */}
                     <button
                         onClick={() => navigate("/ai")}
-                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-semibold shadow-lg shadow-blue-900/20 transition-all hover:scale-105"
+                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-semibold shadow-lg shadow-blue-900/20 transition-all hover:scale-105"
                     >
                         <Sparkles size={16} className="text-blue-100" />
                         <span>AI Tutor</span>

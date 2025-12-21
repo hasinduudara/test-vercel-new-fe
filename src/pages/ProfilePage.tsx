@@ -256,7 +256,7 @@ export default function ProfilePage() {
                                             <div className="w-full h-2.5 bg-gray-700 rounded-full overflow-hidden mb-4">
                                                 <div
                                                     className={`h-full rounded-full transition-all duration-1000 ease-out ${
-                                                        (c.percentage ?? 0) === 100 ? "bg-green-500" : "bg-gradient-to-r from-blue-600 to-blue-400"
+                                                        (c.percentage ?? 0) === 100 ? "bg-green-500" : "bg-linear-to-r from-blue-600 to-blue-400"
                                                     }`}
                                                     style={{ width: `${c.percentage ?? 0}%` }}
                                                 ></div>

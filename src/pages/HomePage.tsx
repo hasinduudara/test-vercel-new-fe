@@ -44,7 +44,7 @@ export default function HomePage() {
             <Header />
 
             {/* Background Decor */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>
 
             <div className="relative flex-1 flex flex-col items-center justify-center px-4 py-20">
 
@@ -56,7 +56,7 @@ export default function HomePage() {
                     </div>
 
                     <h2 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-                        <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 text-transparent bg-clip-text">
+                        <span className="bg-linear-to-r from-green-400 via-emerald-500 to-teal-500 text-transparent bg-clip-text">
                             ආයුබෝවන්!
                         </span>
                     </h2>
@@ -91,7 +91,7 @@ export default function HomePage() {
                             <h3 className="text-2xl font-bold mb-3 text-gray-100 group-hover:text-white transition-colors">
                                 {course.title}
                             </h3>
-                            <p className="text-gray-400 text-sm leading-7 mb-8 min-h-[80px]">
+                            <p className="text-gray-400 text-sm leading-7 mb-8 min-h-20">
                                 {course.desc}
                             </p>
 

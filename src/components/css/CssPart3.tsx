@@ -142,10 +142,10 @@ export default function CssPart3({ onDone }: { onDone: () => void }) {
 
                                 {/* Visual Demo */}
                                 <div className="flex gap-4">
-                                    <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-pink-500 rounded-lg flex items-center justify-center text-[10px] text-white font-bold shadow-lg">
+                                    <div className="w-20 h-20 bg-linear-to-br from-orange-500 to-pink-500 rounded-lg flex items-center justify-center text-[10px] text-white font-bold shadow-lg">
                                         Radius: 10px
                                     </div>
-                                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center text-[10px] text-white font-bold shadow-lg">
+                                    <div className="w-20 h-20 bg-linear-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center text-[10px] text-white font-bold shadow-lg">
                                         Radius: 50%
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@ export default function CssPart3({ onDone }: { onDone: () => void }) {
                         className={`group w-full py-3.5 rounded-xl font-bold shadow-lg transition-all duration-200 flex items-center justify-center gap-2
                             ${completed
                             ? "bg-slate-800 text-slate-500 cursor-not-allowed"
-                            : "bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white hover:shadow-emerald-500/20"
+                            : "bg-linear-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white hover:shadow-emerald-500/20"
                         }`}
                     >
                         <span>{completed ? "CSS Course Completed" : "Finish CSS Course ✔️"}</span>

@@ -101,7 +101,7 @@ export default function ChatWindow({ chatId }: { chatId: string }) {
                             >
                                 {/* Avatar */}
                                 <div className={`
-                                    flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center
+                                    shrink-0 w-8 h-8 rounded-lg flex items-center justify-center
                                     ${msg.role === "user" ? "bg-gray-700" : "bg-emerald-600/10"}
                                 `}>
                                     {msg.role === "user"
@@ -147,7 +147,7 @@ export default function ChatWindow({ chatId }: { chatId: string }) {
             </div>
 
             {/* Floating Input Area */}
-            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-gray-900 via-gray-900 to-transparent pt-10 pb-6 px-4">
+            <div className="absolute bottom-0 left-0 w-full bg-linear-to-t from-gray-900 via-gray-900 to-transparent pt-10 pb-6 px-4">
                 <div className="max-w-3xl mx-auto relative">
                     <div className="relative flex items-end gap-2 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl p-2 focus-within:ring-2 focus-within:ring-emerald-500/50 focus-within:border-emerald-500 transition-all duration-200">
                         <textarea
@@ -156,7 +156,7 @@ export default function ChatWindow({ chatId }: { chatId: string }) {
                             onChange={handleInput}
                             onKeyDown={handleKeyDown}
                             rows={1}
-                            className="flex-1 max-h-[200px] min-h-[44px] py-3 pl-4 bg-transparent border-none text-white placeholder-gray-400 focus:ring-0 resize-none overflow-y-auto custom-scrollbar text-base"
+                            className="flex-1 max-h-[200px] min-h-11 py-3 pl-4 bg-transparent border-none text-white placeholder-gray-400 focus:ring-0 resize-none overflow-y-auto custom-scrollbar text-base"
                             placeholder="Send a message..."
                             disabled={sendingMessage}
                         />

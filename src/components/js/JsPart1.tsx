@@ -208,7 +208,7 @@ export default function JsPart1({ onDone }: { onDone: () => void }) {
                         className={`group w-full py-3.5 rounded-xl font-bold shadow-lg transition-all duration-200 flex items-center justify-center gap-2
                             ${checked
                             ? "bg-slate-800 text-slate-500 cursor-not-allowed"
-                            : "bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white hover:shadow-emerald-500/20"
+                            : "bg-linear-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white hover:shadow-emerald-500/20"
                         }`}
                     >
                         <span>{checked ? "Completed" : "Mark Part 1 Completed"}</span>

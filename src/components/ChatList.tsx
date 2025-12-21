@@ -24,7 +24,7 @@ export default function ChatList({ chats, onSelect, onNewChat, activeChatId }: C
     };
 
     return (
-        <div className="flex flex-col h-full bg-gray-950 border-r border-gray-800 w-full md:w-[260px] flex-shrink-0 transition-all duration-300">
+        <div className="flex flex-col h-full bg-gray-950 border-r border-gray-800 w-full md:w-[260px] shrink-0 transition-all duration-300">
             {/* Header / New Chat */}
             <div className="p-4 mb-2">
                 <button
@@ -66,7 +66,7 @@ export default function ChatList({ chats, onSelect, onNewChat, activeChatId }: C
                         }
                         `}
                     >
-                        <MessageSquare size={16} className={`mr-3 flex-shrink-0 ${activeChatId === chat._id ? 'text-emerald-400' : 'text-gray-600 group-hover:text-gray-500'}`} />
+                        <MessageSquare size={16} className={`mr-3 shrink-0 ${activeChatId === chat._id ? 'text-emerald-400' : 'text-gray-600 group-hover:text-gray-500'}`} />
 
                         <div className="flex-1 truncate text-sm font-medium pr-8">
                             {chat.title || "Untitled Conversation"}
@@ -90,7 +90,7 @@ export default function ChatList({ chats, onSelect, onNewChat, activeChatId }: C
             {/* User Profile / Footer (Optional placeholder for UI completeness) */}
             <div className="p-4 border-t border-gray-800">
                 <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-emerald-500 to-blue-500"></div>
+                    <div className="w-8 h-8 rounded-full bg-linear-to-tr from-emerald-500 to-blue-500"></div>
                     <div className="flex-1">
                         <div className="h-2 w-20 bg-gray-800 rounded animate-pulse"></div>
                     </div>

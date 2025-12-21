@@ -46,7 +46,7 @@ export default function ChatPage() {
                 </div>
 
                 {/* Chat Area - Gradient Background */}
-                <div className="flex-1 flex flex-col relative bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-950 to-gray-950">
+                <div className="flex-1 flex flex-col relative bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-gray-900 via-gray-950 to-gray-950">
 
                     {currentChatId ? (
                         <ChatWindow chatId={currentChatId} />
@@ -68,7 +68,7 @@ export default function ChatPage() {
 
                             {/* Text Content */}
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-                                Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-500">LanguageHub AI</span>
+                                Welcome to <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-emerald-500">LanguageHub AI</span>
                             </h2>
                             <p className="text-gray-400 max-w-md text-lg leading-relaxed mb-8">
                                 I am your personal coding tutor. Ask me anything about HTML, CSS, or JavaScript and I'll help you debug, write, and understand code.

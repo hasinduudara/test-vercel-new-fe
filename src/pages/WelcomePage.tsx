@@ -34,11 +34,11 @@ export default function WelcomePage() {
             <div className="absolute inset-0 pointer-events-none">
                 {/* 1. Moving 3D Grid */}
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute -inset-[100%] top-[-50%] bg-grid animate-grid opacity-30 origin-top"></div>
+                    <div className="absolute -inset-full top-[-50%] bg-grid animate-grid opacity-30 origin-top"></div>
                 </div>
 
                 {/* 2. Radial Gradient Overlay (Spotlight effect) */}
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-950/20 via-gray-950/80 to-gray-950"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-gray-950/20 via-gray-950/80 to-gray-950"></div>
 
                 {/* 3. Glowing Orbs */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full opacity-50"></div>
@@ -46,7 +46,7 @@ export default function WelcomePage() {
 
 
             {/* --- Main Content --- */}
-            <main className="relative z-10 flex-grow flex flex-col items-center justify-center px-4 py-20">
+            <main className="relative z-10 grow flex flex-col items-center justify-center px-4 py-20">
 
                 {/* Hero Container */}
                 <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -60,7 +60,7 @@ export default function WelcomePage() {
                     {/* Title */}
                     <div className="space-y-4">
                         <h1 className="text-6xl md:text-8xl font-black tracking-tight">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-green-400 to-emerald-500">
+                            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-green-400 to-emerald-500">
                                 Language Hub
                             </span>
                         </h1>

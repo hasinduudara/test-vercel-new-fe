@@ -83,10 +83,10 @@ export default function LoginPage() {
 
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute -inset-[100%] top-[-50%] bg-grid animate-grid opacity-40 origin-top"></div>
+                    <div className="absolute -inset-full top-[-50%] bg-grid animate-grid opacity-40 origin-top"></div>
                 </div>
                 {/* Radial Vignette */}
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-950/20 via-gray-950/60 to-gray-950"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-gray-950/20 via-gray-950/60 to-gray-950"></div>
             </div>
 
             {/* --- Main Content --- */}
@@ -161,14 +161,14 @@ export default function LoginPage() {
                             <button
                                 type="submit"
                                 disabled={isLoading}
-                                className="w-full relative group overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-3.5 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg shadow-blue-900/20 disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="w-full relative group overflow-hidden bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-3.5 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg shadow-blue-900/20 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 <div className="flex items-center justify-center gap-2">
                                     {isLoading ? "Signing in..." : "Sign In"}
                                     {!isLoading && <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />}
                                 </div>
                                 {/* Shine effect */}
-                                <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-20 group-hover:animate-shine" />
+                                <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-linear-to-r from-transparent to-white opacity-20 group-hover:animate-shine" />
                             </button>
                         </form>
 

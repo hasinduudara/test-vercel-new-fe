@@ -1,9 +1,9 @@
-import axios, { AxiosError } from "axios";
+import axios, { AxiosError, type InternalAxiosRequestConfig } from "axios";
 import { refreshTokens } from "./user.ts";
 
 // Axios instance
 const api = axios.create({
-    baseURL: import.meta.env.VITE_BACKEND_URL || "https://test-vercel-new-be.vercel.app/api/v1",
+    baseURL: import.meta.env.VITE_BACKEND_URL || "https://test-vercel-new-delta.vercel.app/api/v1",
     withCredentials: true,
 });
 
@@ -37,7 +37,7 @@ api.interceptors.response.use(
         return response;
     },
     async (error: AxiosError) => {
-        const originalRequest: any = error.config;
+        const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean };
 
         // If token expired → refresh
         if (

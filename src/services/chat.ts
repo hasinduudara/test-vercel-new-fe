@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000/api/v1";
+const API = import.meta.env.VITE_BACKEND_URL || "https://test-vercel-new-be.vercel.app/api/v1";
 
 export const createChat = async (token: string) => {
     const res = await fetch(`${API}/chat/new`, {
